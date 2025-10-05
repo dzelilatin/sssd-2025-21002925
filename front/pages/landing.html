@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Area</title>
+    <link href="../assets/css/landing.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div id="welcome-message"></div>
+        <div id="landing-error-message" style="display:none;color:#b71c1c;background:#ffebee;padding:10px;margin-bottom:10px;border-radius:4px;font-weight:bold;"></div>
+
+        <div id="security-settings">
+            <h2>Security Settings</h2>
+            <button onclick="generateNewQRCode()">Generate new QR Code</button>
+            <button onclick="generateNewRecoveryCode()">Generate new Recovery Code</button>
+            <div id="qr-code-container" style="display: none;">
+                <h3>New QR Code</h3>
+                <img id="qr-code" src="" alt="QR Code for OTP">
+            </div>
+            <div id="recoveryCodesArea" class="recovery-codes-list" style="display: none;">
+                <h3>Your Recovery Codes:</h3>
+                <p>Store these codes safely! They will not be shown again.</p>
+                <div id="recoveryCodesList">
+                    <!-- Recovery codes will be loaded here by landing.js -->
+                </div>
+            </div>
+        </div>
+
+        <div id="password-change">
+            <h2>Change Password</h2>
+            <form id="password-form">
+                <input type="password" id="new-password" placeholder="New Password" required>
+                <button type="button" onclick="changePassword()">Change Password</button>
+            </form>
+        </div>
+
+        <div id="logout">
+            <button id="logout-button">Log Out</button>
+        </div>
+    </div>
+
+    <script src="../assets/js/landing.js"></script>
+</body>
+</html>

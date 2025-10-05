@@ -1,0 +1,67 @@
+/* welcome.css */
+
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Solid color with opacity */
+    border-radius: 5px;
+}
+
+#welcome-message {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#security-settings,
+#password-change,
+#logout {
+    margin-bottom: 20px;
+}
+
+#security-settings h2,
+#password-change h2 {
+    margin-bottom: 10px;
+}
+
+#security-settings button,
+#password-change button,
+#logout button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#security-settings button:hover,
+#password-change button:hover,
+#logout button:hover {
+    background-color: #0056b3;
+}
+
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+    .container {
+        margin: 20px auto;
+        padding: 10px;
+    }
+}
