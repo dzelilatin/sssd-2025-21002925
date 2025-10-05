@@ -165,5 +165,5 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 
 ## 👨‍💻 Author
 
-**Dzelil Atin**
+**Dzelila Tinjak**
 * GitHub: [@dzelilatin](https://github.com/dzelilatin)
